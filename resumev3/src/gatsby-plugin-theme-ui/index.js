@@ -27,9 +27,9 @@ const base = {
     colors: {
       text: '#000',
       background: '#fff',
-      primary: '#07c',
-      secondary: '#30c',
-      muted: '#f6f6f6',
+      primary: '#bb2205',
+      secondary: '#00b300',
+      muted: '#0e918c',
     },
     styles: {
       root: {
@@ -68,6 +68,9 @@ const base = {
         lineHeight: 'body',
       },
       a: {
+        color: 'primary',
+      },
+      Link: {
         color: 'primary',
       },
       pre: {
