@@ -50,7 +50,6 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             title
-            excerpt
             content
             slug
           }
@@ -85,7 +84,7 @@ exports.createPages = ({ graphql, actions }) => {
     result.data.allWordpressWpYoutube.edges.forEach(({ node }) => {
       createPage({
         path: `books/` + node.slug,
-        component: path.resolve(`./src/templates/video-post.js`),
+        component: path.resolve(`./src/templates/youtube-post.js`),
         context: {
           // This is the $slug variable
           // passed to blog-post.js

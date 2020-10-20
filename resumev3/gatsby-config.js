@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Resume`,
+    title: `Le`,
     description: `This is a new resume page`,
     author: `@gatsbyjs`,
     menuLinks:[
@@ -9,15 +9,12 @@ module.exports = {
         Link: '/'
       },
       {
-        name: 'about',
-        Link: '/about'
+        name: 'blogs',
+        Link: '/blogs'
       },
       {
         name: 'youtube',
         Link: '/youtube'
-      },{
-        name: 'blogs',
-        Link: '/blogs'
       }
     ]
   },
@@ -80,12 +77,25 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    { resolve: 'gatsby-plugin-theme-ui',
+    options: {
+      prismPreset: 'night-owl',
+      preset: '@theme-ui/presets',
+      basePath: `/`,
+
+    }},
     {
-      resolve: `gatsby-plugin-theme-ui`,
+      resolve: `gatsby-theme-blog`,
       options: {
-        preset: "@theme-ui/preset-funk",
+        basePath: `/blog`,
       },
     },
+    {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        basePath: `/notes`,
+      },
+    },   
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

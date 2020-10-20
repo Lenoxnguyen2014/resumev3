@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { Box, Grid } from "theme-ui"
-import Checkout from "../components/checkout"
+// import Checkout from "../components/checkout"
 
 function YoutubePost({ data }) {
   const youtube = data.allWordpressWpYoutube.edges[0].node
