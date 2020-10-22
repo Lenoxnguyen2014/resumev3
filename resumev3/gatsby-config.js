@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         name: 'youtube',
-        Link: '/youtube'
+        Link: 'https://www.youtube.com/channel/UCFtsw0_XjYCbjOqKQn8DJEQ?view_as=subscriber'
       }
     ]
   },

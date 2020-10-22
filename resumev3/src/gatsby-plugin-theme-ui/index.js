@@ -100,6 +100,20 @@ const base = {
       img: {
         maxWidth: '100%',
       },
+      buttons: {
+        primary: {
+          color: 'background',
+          bg: 'primary',
+        },
+        secondary: {
+          color: 'background',
+          bg: 'secondary',
+        },
+        gray: {
+          color: 'background',
+          bg: 'gray',
+        },
+      },
     },
   }
   

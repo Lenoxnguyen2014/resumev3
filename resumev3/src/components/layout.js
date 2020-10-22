@@ -8,10 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Grid, Box, Flex, Button } from 'theme-ui'
 import Header from "./header"
-
-
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,9 +26,10 @@ const Layout = ({ children }) => {
     }
   `)
 
+
   return (
     <div>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header class="header" menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title || `Title`}  />
       <div
         style={{
           margin: `0 auto`,
@@ -40,11 +39,12 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer style={{
-          marginTop: `2rem`
+          textAlign: "center",
+          paddingTop: "10%"
         }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+
+      <Button>Subscribe me</Button>
+
         </footer>
       </div>
       </div>

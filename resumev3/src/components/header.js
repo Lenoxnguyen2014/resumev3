@@ -5,7 +5,6 @@ import { Grid, Box, Flex } from 'theme-ui'
 import Logo from "../images/logo.png"
 import Search_logo from "../images/search_logo.png"
 function Header ({ menuLinks,siteTitle }) {
-  console.log(menuLinks)
   return(
   <header
     style={{
